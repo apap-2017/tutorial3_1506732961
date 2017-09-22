@@ -1,0 +1,11 @@
+Pada tutorial 3 kali ini diberikan latihan yang harus dikerjakan sendiri maupun diberi petunjuk
+
+Pada latihan membuat controller dan fungsi add, jika membuka laman student/add?npm=12345&name=chanek&gpa=3.43 maka yang akan keluar adalah pemberitahuan bahwa data berhasil dimasukkan kedalam arraylist. Jika membuka laman student/add?npm=12345&name=chanek maka yang akan keluar adalah error. Hal ini terjadi karena pada kode sudah terdapat required true untuk variabel gpa maka jika gpa tidak dimasukkan, data tidak akan masuk dan akan error. 
+
+Pada latihan view by npm, localhost:8080/student/add?npm=12345&name=chanek&gpa=3.43 lalu buka localhost:8080/student/view?npm=12345 akan menampilkan data mahasiswa berupa npm, nama, dan gpa dari mahasiswa tersebut. Jika localhost:8080/student/view?npm=12345 setelah merestart maven, maka yang akan muncul adalah laman error karena arraylist yang sudah ada akan diinisiasi ulang dengan isi null setiap program mulai dijalankan. 
+
+pada latihan view all, localhost:8080/student/add?npm=12345&name=chanek&gpa=3.43 lalu buka localhost:8080/student/viewall akan menampilkan data mahasiswa chanek, jika ditambah dengan data mahasiswa lain, maka akan muncul data kedua mahasiswa (chanek dan yang baru dimasukkan) yang dipisahkan dengan sebuah garis horizontal.
+
+Method selectStudent() yang telah diimplementasi ialah dengan menggunakan loop kepada arrayList untuk mencari mahasiswa dengan npm yang sesuai dengan npm di parameter. Jika sudah ketemu, maka method akan mengembalikan objek mahasiswa tersebut. fitur deleteStudent() yang telah diimplementasi tidak jauh berbeda dengan method selectStudent(), dimana method akan melakukan loop kepada arrayList untuk mencari mahasiswa npm yang sesuai, jika ketemu maka method akan menghapus data mahasiswa tersebut kemudian mengembalikan nilai true. Kemudian untuk di bagian controller, kedua method akan dimasukkan kedalam model. 
+
+kendala yang dihadapi adalah sudah sedikit lupa tentang java sehingga harus googling beberapa kali.
